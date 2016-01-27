@@ -3,7 +3,7 @@
 var zmysql = require('../lib/index');
 var util = require('util');
 
-let cfg = zmysql.newConfig('test', '121.41.86.183', 'zhs007', 'zhs007', 'test', 5000, zmysql.defaultLogger);
+let cfg = zmysql.newConfig('test', '127.0.0.1', 'testuser', 'testpassword', 'test', 5000, zmysql.defaultLogger);
 
 function queryTest(val, callback) {
     let db = zmysql.getDBClient('test');
